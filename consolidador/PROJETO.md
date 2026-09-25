@@ -4,7 +4,7 @@ Aplicativo para importar a base histórica, registrar novas notas e protocolos e
 
 ## Fonte e importação
 
-São 112 operações de ações/FIIs na aba Dados e 28 operações de Tesouro Direto. As abas Carteira, Notas e backapp não são importadas como transações adicionais, evitando duplicações e dependência das fórmulas antigas.
+São 112 operações de ações/FIIs na aba Dados e 35 operações de Tesouro Direto (28 vinham na planilha original; 7 "Investimento programado" estavam ausentes da aba Tesouro Direto e foram repostas em 2026-09-25 a partir de uma base corrigida fornecida pelo usuário — ver `data/source.json.dataCorrections` para o detalhe da correção, incluindo a instituição de cada nota, que na planilha original vinha genérica). As abas Carteira, Notas e backapp não são importadas como transações adicionais, evitando duplicações e dependência das fórmulas antigas.
 
 Cada documento guarda os dados originais, a referência de aba/linha e o SHA-256 do arquivo. As taxas originais são reconstruídas por corretora, data e número da nota. Importações repetidas não sobrescrevem documentos existentes. Edições armazenam a versão anterior e rejeitam gravações com versão desatualizada.
 
@@ -38,6 +38,6 @@ Os totais de taxas dependem da transcrição original; a planilha não substitui
 
 ## Verificação
 
-scripts/test-ledger.mjs verifica as 455 reconciliações de taxas, conservação de centavos, IRRF fora das compras, custo médio e resgates superiores ao saldo. scripts/test-api.py verifica importação idempotente, gravação, conflito de versão, entradas inválidas e origem da requisição no ambiente local.
+scripts/test-ledger.mjs verifica as 490 reconciliações de taxas, conservação de centavos, IRRF fora das compras, custo médio e resgates superiores ao saldo. scripts/test-api.py verifica importação idempotente, gravação, conflito de versão, entradas inválidas e origem da requisição no ambiente local.
 
 Para desenvolvimento: executar scripts/run-framework.mjs dev com Node 22.13 ou superior. Gerar build com scripts/run-framework.mjs build. A publicação usa o workflow do plugin Sites e a identidade já registrada em .openai/hosting.json; não criar outro site.

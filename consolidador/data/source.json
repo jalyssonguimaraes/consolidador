@@ -3259,7 +3259,7 @@
     },
     {
       "id": "treasury-9299916",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2017-08-08",
       "number": "9299916",
       "kind": "treasury",
@@ -3298,7 +3298,7 @@
     },
     {
       "id": "treasury-9978308",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2017-10-10",
       "number": "9978308",
       "kind": "treasury",
@@ -3337,7 +3337,7 @@
     },
     {
       "id": "treasury-11045305",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2018-01-17",
       "number": "11045305",
       "kind": "treasury",
@@ -3376,7 +3376,7 @@
     },
     {
       "id": "treasury-12371605",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2018-05-11",
       "number": "12371605",
       "kind": "treasury",
@@ -3415,7 +3415,7 @@
     },
     {
       "id": "treasury-12930108",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2018-07-04",
       "number": "12930108",
       "kind": "treasury",
@@ -3454,7 +3454,7 @@
     },
     {
       "id": "treasury-14400330",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2018-10-19",
       "number": "14400330",
       "kind": "treasury",
@@ -3493,7 +3493,7 @@
     },
     {
       "id": "treasury-16942766",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2019-02-28",
       "number": "16942766",
       "kind": "treasury",
@@ -3526,13 +3526,13 @@
         {
           "b3": "0.99",
           "gross": "2491.44",
-          "reportedNet": "2491.44"
+          "reportedNet": "2490.45"
         }
       ]
     },
     {
       "id": "treasury-17603724",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2019-03-28",
       "number": "17603724",
       "kind": "treasury",
@@ -3565,13 +3565,13 @@
         {
           "b3": "1.78",
           "gross": "3003.1110000000003",
-          "reportedNet": "3003.11"
+          "reportedNet": "3001.33"
         }
       ]
     },
     {
       "id": "treasury-28884836",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2020-07-22",
       "number": "28884836",
       "kind": "treasury",
@@ -3604,13 +3604,13 @@
         {
           "b3": "0.53",
           "gross": "3730.776",
-          "reportedNet": "3730.77"
+          "reportedNet": "3730.24"
         }
       ]
     },
     {
       "id": "treasury-46085615",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2022-06-22",
       "number": "46085615",
       "kind": "treasury",
@@ -3649,7 +3649,7 @@
     },
     {
       "id": "treasury-46643368",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2022-07-07",
       "number": "46643368",
       "kind": "treasury",
@@ -3688,7 +3688,7 @@
     },
     {
       "id": "treasury-46816596",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2022-07-12",
       "number": "46816596",
       "kind": "treasury",
@@ -3727,7 +3727,7 @@
     },
     {
       "id": "treasury-47776230",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2022-08-11",
       "number": "47776230",
       "kind": "treasury",
@@ -3766,7 +3766,7 @@
     },
     {
       "id": "treasury-49084191",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2022-09-27",
       "number": "49084191",
       "kind": "treasury",
@@ -3805,7 +3805,7 @@
     },
     {
       "id": "treasury-51570940",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2022-12-21",
       "number": "51570940",
       "kind": "treasury",
@@ -3844,7 +3844,7 @@
     },
     {
       "id": "treasury-53483598",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-02-23",
       "number": "53483598",
       "kind": "treasury",
@@ -3883,7 +3883,7 @@
     },
     {
       "id": "treasury-53632784",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-02-28",
       "number": "53632784",
       "kind": "treasury",
@@ -3922,7 +3922,7 @@
     },
     {
       "id": "treasury-55567587",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-04-28",
       "number": "55567587",
       "kind": "treasury",
@@ -3961,7 +3961,7 @@
     },
     {
       "id": "treasury-55745563",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-05-04",
       "number": "55745563",
       "kind": "treasury",
@@ -4000,7 +4000,7 @@
     },
     {
       "id": "treasury-56041193",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-05-12",
       "number": "56041193",
       "kind": "treasury",
@@ -4039,7 +4039,7 @@
     },
     {
       "id": "treasury-56530827",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-05-30",
       "number": "56530827",
       "kind": "treasury",
@@ -4078,7 +4078,7 @@
     },
     {
       "id": "treasury-57661903",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-07-04",
       "number": "57661903",
       "kind": "treasury",
@@ -4117,7 +4117,7 @@
     },
     {
       "id": "treasury-58553012",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2023-07-31",
       "number": "58553012",
       "kind": "treasury",
@@ -4156,7 +4156,7 @@
     },
     {
       "id": "treasury-63744415",
-      "broker": "BTG",
+      "broker": "Nu Investimentos",
       "date": "2024-01-08",
       "number": "63744415",
       "kind": "treasury",
@@ -4195,8 +4195,8 @@
     },
     {
       "id": "treasury-72047518",
-      "broker": "XP",
-      "date": "2024-08-30",
+      "broker": "XP Investimentos",
+      "date": "2024-08-29",
       "number": "72047518",
       "kind": "treasury",
       "fees": {
@@ -4234,7 +4234,7 @@
     },
     {
       "id": "treasury-79674540",
-      "broker": "BTG",
+      "broker": "Banco BTG Pactual",
       "date": "2025-02-18",
       "number": "79674540",
       "kind": "treasury",
@@ -4273,7 +4273,7 @@
     },
     {
       "id": "treasury-85789609",
-      "broker": "BTG",
+      "broker": "Banco BTG Pactual",
       "date": "2025-07-16",
       "number": "85789609",
       "kind": "treasury",
@@ -4312,7 +4312,7 @@
     },
     {
       "id": "treasury-85789709",
-      "broker": "BTG",
+      "broker": "Banco BTG Pactual",
       "date": "2025-07-16",
       "number": "85789709",
       "kind": "treasury",
@@ -4346,6 +4346,446 @@
           "b3": "58.68",
           "gross": "31926.541499999996",
           "reportedNet": "31867.86"
+        }
+      ]
+    },
+    {
+      "id": "treasury-46498459",
+      "broker": "Nu Investimentos",
+      "date": "2022-07-05",
+      "number": "46498459",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.00",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "11775.39",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "Base corrigida enviada pelo usuário em 2026-09-25 (ausente na planilha original \"Tesouro Direto\")",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto — correção",
+        "rows": []
+      },
+      "original": [
+        {
+          "b3": "0.00",
+          "gross": "1059.7851",
+          "reportedNet": "1059.78"
+        }
+      ]
+    },
+    {
+      "id": "treasury-47560696",
+      "broker": "Nu Investimentos",
+      "date": "2022-08-05",
+      "number": "47560696",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.00",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "11904.15",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "Base corrigida enviada pelo usuário em 2026-09-25 (ausente na planilha original \"Tesouro Direto\")",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto — correção",
+        "rows": []
+      },
+      "original": [
+        {
+          "b3": "0.00",
+          "gross": "1071.3735",
+          "reportedNet": "1071.37"
+        }
+      ]
+    },
+    {
+      "id": "treasury-48437471",
+      "broker": "Nu Investimentos",
+      "date": "2022-09-05",
+      "number": "48437471",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.00",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "12033.76",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "Base corrigida enviada pelo usuário em 2026-09-25 (ausente na planilha original \"Tesouro Direto\")",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto — correção",
+        "rows": []
+      },
+      "original": [
+        {
+          "b3": "0.00",
+          "gross": "1083.0384",
+          "reportedNet": "1083.03"
+        }
+      ]
+    },
+    {
+      "id": "treasury-49310001",
+      "broker": "Nu Investimentos",
+      "date": "2022-10-05",
+      "number": "49310001",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.00",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "12171.67",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "Base corrigida enviada pelo usuário em 2026-09-25 (ausente na planilha original \"Tesouro Direto\")",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto — correção",
+        "rows": []
+      },
+      "original": [
+        {
+          "b3": "0.00",
+          "gross": "1095.4503",
+          "reportedNet": "1095.45"
+        }
+      ]
+    },
+    {
+      "id": "treasury-50152807",
+      "broker": "Nu Investimentos",
+      "date": "2022-11-07",
+      "number": "50152807",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.00",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "12312.33",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "Base corrigida enviada pelo usuário em 2026-09-25 (ausente na planilha original \"Tesouro Direto\")",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto — correção",
+        "rows": []
+      },
+      "original": [
+        {
+          "b3": "0.00",
+          "gross": "1108.1097",
+          "reportedNet": "1108.10"
+        }
+      ]
+    },
+    {
+      "id": "treasury-51015525",
+      "broker": "Nu Investimentos",
+      "date": "2022-12-05",
+      "number": "51015525",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.00",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "12427.36",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "Base corrigida enviada pelo usuário em 2026-09-25 (ausente na planilha original \"Tesouro Direto\")",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto — correção",
+        "rows": []
+      },
+      "original": [
+        {
+          "b3": "0.00",
+          "gross": "1118.4624",
+          "reportedNet": "1118.46"
+        }
+      ]
+    },
+    {
+      "id": "treasury-52027353",
+      "broker": "Nu Investimentos",
+      "date": "2023-01-05",
+      "number": "52027353",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.00",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "12569.29",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "Base corrigida enviada pelo usuário em 2026-09-25 (ausente na planilha original \"Tesouro Direto\")",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto — correção",
+        "rows": []
+      },
+      "original": [
+        {
+          "b3": "0.00",
+          "gross": "1131.2361",
+          "reportedNet": "1131.23"
+        }
+      ]
+    }
+  ],
+  "dataCorrections": [
+    {
+      "appliedAt": "2026-09-25",
+      "reason": "Reconciliação da aba Tesouro Direto contra base corrigida fornecida pelo usuário: instituição divergente da planilha original, valor líquido de resgates com taxa B3 não descontada em 3 notas, e 7 \"Investimento programado\" ausentes da planilha original.",
+      "brokerFixed": [
+        {
+          "protocol": "9299916",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "9978308",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "11045305",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "12371605",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "12930108",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "14400330",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "16942766",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "17603724",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "28884836",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "46085615",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "46643368",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "46816596",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "47776230",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "49084191",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "51570940",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "53483598",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "53632784",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "55567587",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "55745563",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "56041193",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "56530827",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "57661903",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "58553012",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "63744415",
+          "from": "BTG",
+          "to": "Nu Investimentos"
+        },
+        {
+          "protocol": "72047518",
+          "from": "XP",
+          "to": "XP Investimentos"
+        },
+        {
+          "protocol": "79674540",
+          "from": "BTG",
+          "to": "Banco BTG Pactual"
+        },
+        {
+          "protocol": "85789609",
+          "from": "BTG",
+          "to": "Banco BTG Pactual"
+        },
+        {
+          "protocol": "85789709",
+          "from": "BTG",
+          "to": "Banco BTG Pactual"
+        }
+      ],
+      "reportedNetFixed": [
+        {
+          "protocol": "16942766",
+          "from": "2491.44",
+          "to": "2490.45"
+        },
+        {
+          "protocol": "17603724",
+          "from": "3003.11",
+          "to": "3001.33"
+        },
+        {
+          "protocol": "28884836",
+          "from": "3730.77",
+          "to": "3730.24"
+        }
+      ],
+      "notesAdded": [
+        "46498459",
+        "47560696",
+        "48437471",
+        "49310001",
+        "50152807",
+        "51015525",
+        "52027353"
+      ],
+      "dateFixed": [
+        {
+          "protocol": "72047518",
+          "from": "2024-08-30",
+          "to": "2024-08-29"
         }
       ]
     }

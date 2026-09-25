@@ -1,0 +1,4353 @@
+{
+  "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+  "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+  "notes": [
+    {
+      "id": "source-0f1d5694c0fef65fdd5280bc",
+      "broker": "EASYNVEST",
+      "date": "2019-01-14",
+      "number": "31026",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.47",
+        "exchange": "0.07",
+        "brokerage": "10.00",
+        "iss": "0.50",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ABEV3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "17.45"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          2
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.47",
+          "exchange": "0.07",
+          "brokerage": "10",
+          "iss": "0.5",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-cd771bf4682785d48266dcc8",
+      "broker": "EASYNVEST",
+      "date": "2019-02-21",
+      "number": "48584",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.26",
+        "exchange": "0.03",
+        "brokerage": "10.00",
+        "iss": "0.50",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "200",
+          "price": "4.8"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          3
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.26",
+          "exchange": "0.03",
+          "brokerage": "10",
+          "iss": "0.5",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-762bdde7b1b2d9eefb479721",
+      "broker": "EASYNVEST",
+      "date": "2019-03-01",
+      "number": "2194",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.68",
+        "exchange": "0.09",
+        "brokerage": "10.00",
+        "iss": "0.50",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "200",
+          "price": "12.4"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          4
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.68",
+          "exchange": "0.09",
+          "brokerage": "10",
+          "iss": "0.5",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-9e50f544c9558dc8d605fee7",
+      "broker": "EASYNVEST",
+      "date": "2019-06-04",
+      "number": "5776",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.27",
+        "exchange": "0.04",
+        "brokerage": "10.00",
+        "iss": "0.50",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "200",
+          "price": "5.05"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          5
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.27",
+          "exchange": "0.04",
+          "brokerage": "10",
+          "iss": "0.5",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-fc5049a7184431bc7dd60ecd",
+      "broker": "EASYNVEST",
+      "date": "2019-06-21",
+      "number": "44802",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.50",
+        "exchange": "0.07",
+        "brokerage": "10.00",
+        "iss": "0.50",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ABEV3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "18.5"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          6
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.5",
+          "exchange": "0.07",
+          "brokerage": "10",
+          "iss": "0.5",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-927cfae4a0cd4c093bdf58ea",
+      "broker": "EASYNVEST",
+      "date": "2019-06-26",
+      "number": "55171",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.70",
+        "exchange": "0.10",
+        "brokerage": "10.00",
+        "iss": "0.50",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "200",
+          "price": "12.9"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          7
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.7",
+          "exchange": "0.1",
+          "brokerage": "10",
+          "iss": "0.5",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-21fa5d2b2f1b0504ef6baefc",
+      "broker": "CLEAR",
+      "date": "2019-04-12",
+      "number": "1547418",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.82",
+        "exchange": "0.12",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "15",
+          "price": "25.7"
+        },
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "26.1"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          8,
+          9
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.41",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.41",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-e9ca24f54d2a677bf0e33fc5",
+      "broker": "CLEAR",
+      "date": "2019-04-30",
+      "number": "1793512",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.86",
+        "exchange": "0.12",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.15"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "15",
+          "price": "27.26"
+        },
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "27.25"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          10,
+          11
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.43",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.075"
+        },
+        {
+          "settlement": "0.43",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.075"
+        }
+      ]
+    },
+    {
+      "id": "source-8986ac21f409a3cbf2462201",
+      "broker": "CLEAR",
+      "date": "2019-05-14",
+      "number": "2021594",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.26",
+        "exchange": "0.20",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "1000",
+          "price": "4.6"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          12
+        ]
+      },
+      "original": [
+        {
+          "settlement": "1.26",
+          "exchange": "0.2",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-dcd75572906cc3a8ca10a112",
+      "broker": "CLEAR",
+      "date": "2019-06-03",
+      "number": "2384279",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.36",
+        "exchange": "0.34",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.24"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "1000",
+          "price": "4.96"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          13
+        ]
+      },
+      "original": [
+        {
+          "settlement": "1.36",
+          "exchange": "0.34",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.24"
+        }
+      ]
+    },
+    {
+      "id": "source-b8c797e176f9d7aac31351f6",
+      "broker": "CLEAR",
+      "date": "2019-06-04",
+      "number": "2414476",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.18",
+        "exchange": "0.04",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BPAN4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "6.81"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          14
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.18",
+          "exchange": "0.04",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-e6b5c1e09a820881b8f4d4ce",
+      "broker": "CLEAR",
+      "date": "2019-06-05",
+      "number": "2443981",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.52",
+        "exchange": "0.08",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "19"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          15
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.52",
+          "exchange": "0.08",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-716a20f33235b48ddfedb769",
+      "broker": "CLEAR",
+      "date": "2019-06-14",
+      "number": "2652117",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.00",
+        "exchange": "0.15",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.03"
+      },
+      "trades": [
+        {
+          "asset": "BPAN4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "7"
+        },
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "600",
+          "price": "4.9"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          16,
+          17
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.5",
+          "exchange": "0.075",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.03"
+        },
+        {
+          "settlement": "0.5",
+          "exchange": "0.075",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-de5637a7b48bf4f9a624892a",
+      "broker": "CLEAR",
+      "date": "2019-06-25",
+      "number": "2837800",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.84",
+        "exchange": "0.12",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "47",
+          "price": "20.25"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "16",
+          "price": "20.25"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "5",
+          "price": "20.25"
+        },
+        {
+          "asset": "SUZB3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "4",
+          "price": "33.7"
+        },
+        {
+          "asset": "SUZB3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "41",
+          "price": "33.7"
+        },
+        {
+          "asset": "SUZB3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "5",
+          "price": "33.7"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.14",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.14",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.14",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.14",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.14",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.14",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-0ab887fc2b6b8287025360f3",
+      "broker": "CLEAR",
+      "date": "2019-06-26",
+      "number": "2867537",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.27",
+        "exchange": "0.04",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "17",
+          "price": "19.9"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "32",
+          "price": "20"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "1",
+          "price": "19.9"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          24,
+          25,
+          26
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.09",
+          "exchange": "0.013333333333333",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.09",
+          "exchange": "0.013333333333333",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.09",
+          "exchange": "0.013333333333333",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-46c050f138e3373707f1705c",
+      "broker": "CLEAR",
+      "date": "2019-08-15",
+      "number": "4406899",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.66",
+        "exchange": "0.09",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "24.3"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          27
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.66",
+          "exchange": "0.09",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-113ba58a9fceff0d8c6c223f",
+      "broker": "CLEAR",
+      "date": "2019-09-05",
+      "number": "5079754",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.40",
+        "exchange": "0.19",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.25"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "18",
+          "price": "23.4"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "200",
+          "price": "23.4183486"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          28,
+          29
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.7",
+          "exchange": "0.095",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.125"
+        },
+        {
+          "settlement": "0.7",
+          "exchange": "0.095",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.125"
+        }
+      ]
+    },
+    {
+      "id": "source-3ec50a85e60583f969d4b008",
+      "broker": "CLEAR",
+      "date": "2019-09-10",
+      "number": "5223322",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.66",
+        "exchange": "0.09",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BIDI4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "17.5"
+        },
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "6.74"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          30,
+          31
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.33",
+          "exchange": "0.045",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.33",
+          "exchange": "0.045",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-6fd6d6d262a18ba535aab951",
+      "broker": "CLEAR",
+      "date": "2019-10-04",
+      "number": "6046542",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.44",
+        "exchange": "0.06",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BIDI4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "16.3"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          32
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.44",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-133ac80634281de6ef2be538",
+      "broker": "CLEAR",
+      "date": "2019-10-25",
+      "number": "6719522",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.81",
+        "exchange": "0.12",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.14"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "29.5"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          33
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.81",
+          "exchange": "0.12",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.14"
+        }
+      ]
+    },
+    {
+      "id": "source-315137aa98f0bc2add292b09",
+      "broker": "CLEAR",
+      "date": "2019-11-01",
+      "number": "6954268",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.48",
+        "exchange": "0.07",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.08"
+      },
+      "trades": [
+        {
+          "asset": "SUZB3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "50",
+          "price": "35"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          34
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.48",
+          "exchange": "0.07",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.08"
+        }
+      ]
+    },
+    {
+      "id": "source-258a7f0e93d6fbcd5c2aa1fe",
+      "broker": "CLEAR",
+      "date": "2019-11-11",
+      "number": "7291341",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.40",
+        "exchange": "0.06",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BIDI4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "14.9"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          35
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.4",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-801708453a495ae72f86ea68",
+      "broker": "CLEAR",
+      "date": "2019-11-12",
+      "number": "7341529",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.63",
+        "exchange": "0.09",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "23"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          36
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.63",
+          "exchange": "0.09",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-7e0ad06516806222ef51f2fb",
+      "broker": "CLEAR",
+      "date": "2020-01-23",
+      "number": "1107586",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.65",
+        "exchange": "0.08",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "23.9"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          37
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.65",
+          "exchange": "0.08",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-b0cdaafe99f70ab79b555658",
+      "broker": "CLEAR",
+      "date": "2020-02-17",
+      "number": "2239979",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.62",
+        "exchange": "0.07",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "22.9"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          38
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.62",
+          "exchange": "0.07",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-79fbfb78987b011776c79ec1",
+      "broker": "CLEAR",
+      "date": "2020-02-27",
+      "number": "2656442",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.46",
+        "exchange": "0.18",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ABEV3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "14.9"
+        },
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "12.08"
+        },
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "26.29"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          39,
+          40,
+          41
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.48666666666666",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.48666666666666",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.48666666666666",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-01b1a6254af7320ff0c29652",
+      "broker": "CLEAR",
+      "date": "2020-03-06",
+      "number": "3124721",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.33",
+        "exchange": "0.03",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "12"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          42
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.33",
+          "exchange": "0.03",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-29445d31541cc800c3316ad8",
+      "broker": "CLEAR",
+      "date": "2020-03-09",
+      "number": "3225267",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.29",
+        "exchange": "0.03",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "10.8"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          43
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.29",
+          "exchange": "0.03",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-aad864dfac3a7f7edff9c1b6",
+      "broker": "CLEAR",
+      "date": "2020-03-12",
+      "number": "3533049",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.35",
+        "exchange": "0.04",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "12.8"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          44
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.35",
+          "exchange": "0.04",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-5492f61240bee756115df134",
+      "broker": "CLEAR",
+      "date": "2020-03-16",
+      "number": "3734055",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.46",
+        "exchange": "0.05",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BIDI4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "7.96"
+        },
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "9.1"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          45,
+          46
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.23",
+          "exchange": "0.025",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.23",
+          "exchange": "0.025",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-d5e452f9882d381512c68479",
+      "broker": "CLEAR",
+      "date": "2020-03-18",
+      "number": "3914694",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.12",
+        "exchange": "0.01",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "4.7"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          47
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.12",
+          "exchange": "0.01",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-3739a63ebcde1c80f50b10f5",
+      "broker": "CLEAR",
+      "date": "2020-03-19",
+      "number": "4010884",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.23",
+        "exchange": "0.02",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "8.4"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          48
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.23",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-9228587fbca026d8aaa6cd8a",
+      "broker": "CLEAR",
+      "date": "2020-05-25",
+      "number": "7812047",
+      "kind": "variable",
+      "fees": {
+        "settlement": "2.77",
+        "exchange": "0.70",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.50"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "900",
+          "price": "11.21"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          49
+        ]
+      },
+      "original": [
+        {
+          "settlement": "2.77",
+          "exchange": "0.7",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.5"
+        }
+      ]
+    },
+    {
+      "id": "source-e413b9ca23e3473122088178",
+      "broker": "CLEAR",
+      "date": "2020-05-29",
+      "number": "8251002",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.24",
+        "exchange": "0.02",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "8.8"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          50
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.24",
+          "exchange": "0.02",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-5f67457a372b932eba4833f6",
+      "broker": "CLEAR",
+      "date": "2020-06-30",
+      "number": "10859514",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.26",
+        "exchange": "0.03",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "9.6"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          51
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.26",
+          "exchange": "0.03",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-6be535580568f0e6ddf4bb44",
+      "broker": "CLEAR",
+      "date": "2020-07-20",
+      "number": "12634300",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.97",
+        "exchange": "0.10",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BEEF3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "14.6"
+        },
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "21"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          52,
+          53
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.485",
+          "exchange": "0.05",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.485",
+          "exchange": "0.05",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-f7c662c7ddf097d9e20eb74b",
+      "broker": "CLEAR",
+      "date": "2020-07-27",
+      "number": "13377367",
+      "kind": "variable",
+      "fees": {
+        "settlement": "2.10",
+        "exchange": "0.23",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.38"
+      },
+      "trades": [
+        {
+          "asset": "BIDI4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "400",
+          "price": "19.15"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          54
+        ]
+      },
+      "original": [
+        {
+          "settlement": "2.1",
+          "exchange": "0.23",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.38"
+        }
+      ]
+    },
+    {
+      "id": "source-4a1dd74532ac186c81db5d6b",
+      "broker": "CLEAR",
+      "date": "2020-08-05",
+      "number": "14339767",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.59",
+        "exchange": "0.06",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BBDC4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "21.8"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          55
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.59",
+          "exchange": "0.06",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-b5752c24f9ac263a4aceaa08",
+      "broker": "CLEAR",
+      "date": "2020-08-17",
+      "number": "15313024",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.26",
+        "exchange": "0.03",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "9.7"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          56
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.26",
+          "exchange": "0.03",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-71179fdccffa93bb14c8a136",
+      "broker": "CLEAR",
+      "date": "2020-09-21",
+      "number": "17980148",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.38",
+        "exchange": "0.15",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "8.95"
+        },
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "21"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "20.5"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          57,
+          58,
+          59
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.46",
+          "exchange": "0.05",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.46",
+          "exchange": "0.05",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.46",
+          "exchange": "0.05",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-b2e2877da6bab3e6a49cd349",
+      "broker": "CLEAR",
+      "date": "2021-02-22",
+      "number": "3382040",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.62",
+        "exchange": "0.07",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BBDC4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "23.3"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          60
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.62",
+          "exchange": "0.07",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-014e0e98b7fc1b9c25261e98",
+      "broker": "CLEAR",
+      "date": "2021-06-08",
+      "number": "10521071",
+      "kind": "variable",
+      "fees": {
+        "settlement": "3.00",
+        "exchange": "0.60",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "800",
+          "price": "15"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          61
+        ]
+      },
+      "original": [
+        {
+          "settlement": "3",
+          "exchange": "0.6",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-f67153b72e41a2ac2d039214",
+      "broker": "CLEAR",
+      "date": "2021-06-16",
+      "number": "11092524",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.48",
+        "exchange": "0.09",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.09"
+      },
+      "trades": [
+        {
+          "asset": "ABEV3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "19.3"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          62
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.48",
+          "exchange": "0.09",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.09"
+        }
+      ]
+    },
+    {
+      "id": "source-a09f9886a8893002825127b4",
+      "broker": "CLEAR",
+      "date": "2021-06-17",
+      "number": "11190120",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.70",
+        "exchange": "0.14",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "28"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          63
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.7",
+          "exchange": "0.14",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-365892e7c2b3a67e2f3f7b8f",
+      "broker": "CLEAR",
+      "date": "2021-09-03",
+      "number": "15518157",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.23",
+        "exchange": "0.04",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "9.39"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          64
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.23",
+          "exchange": "0.04",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-65f31971b027828abac54233",
+      "broker": "CLEAR",
+      "date": "2021-09-20",
+      "number": "16210946",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.20",
+        "exchange": "0.04",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "8"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          65
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.2",
+          "exchange": "0.04",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-e2e4b524b52ca3912050a513",
+      "broker": "CLEAR",
+      "date": "2022-03-16",
+      "number": "2916782",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.76",
+        "exchange": "0.15",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "30.5"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          66
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.76",
+          "exchange": "0.15",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-e0256d802fcb89953a47ea96",
+      "broker": "CLEAR",
+      "date": "2022-04-08",
+      "number": "3851998",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.45",
+        "exchange": "0.09",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "3.6"
+        },
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "3.6"
+        },
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "3.6"
+        },
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "200",
+          "price": "3.6"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          67,
+          68,
+          69,
+          70
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.1125",
+          "exchange": "0.0225",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.1125",
+          "exchange": "0.0225",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.1125",
+          "exchange": "0.0225",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.1125",
+          "exchange": "0.0225",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-b99cb3cc43854efa7d71b4b2",
+      "broker": "CLEAR",
+      "date": "2022-06-13",
+      "number": "5945822",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.26",
+        "exchange": "0.05",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "400",
+          "price": "2.6"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          71
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.26",
+          "exchange": "0.05",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-f9840941a2bcc08ee955bdfc",
+      "broker": "CLEAR",
+      "date": "2022-06-17",
+      "number": "6109526",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.66",
+        "exchange": "0.13",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "26.6"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          72
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.66",
+          "exchange": "0.13",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-29d892e5b4c00a79bad9f0b6",
+      "broker": "CLEAR",
+      "date": "2022-07-01",
+      "number": "6577138",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.23",
+        "exchange": "0.04",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "500",
+          "price": "1.87"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          73
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.23",
+          "exchange": "0.04",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-ab6ad1e29e1b5499f92ea855",
+      "broker": "CLEAR",
+      "date": "2022-09-06",
+      "number": "8804517",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.37",
+        "exchange": "0.07",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.07"
+      },
+      "trades": [
+        {
+          "asset": "BEEF3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "14.92"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          74
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.37",
+          "exchange": "0.07",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.07"
+        }
+      ]
+    },
+    {
+      "id": "source-21971ea1643b36d3ace30d86",
+      "broker": "CLEAR",
+      "date": "2022-12-09",
+      "number": "11842121",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.25",
+        "exchange": "0.05",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BHIA3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "500",
+          "price": "2"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          75
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.25",
+          "exchange": "0.05",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-5069ba34540339a90b5f3ef4",
+      "broker": "CLEAR",
+      "date": "2023-01-04",
+      "number": "103702",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.20",
+        "exchange": "0.04",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "8.15"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          76
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.2",
+          "exchange": "0.04",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-3b16baaaffdeebcdcc52fc28",
+      "broker": "CLEAR",
+      "date": "2023-09-08",
+      "number": "7092378",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "12",
+          "price": "2.65"
+        },
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "2",
+          "price": "2.66"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          77,
+          78
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0",
+          "exchange": "0",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0",
+          "exchange": "0",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-21decb36b6b6084395a214b7",
+      "broker": "CLEAR",
+      "date": "2024-04-09",
+      "number": "1716090",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.16",
+        "exchange": "0.23",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0.23"
+      },
+      "trades": [
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "23.26"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "100",
+          "price": "23.26"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          79,
+          80
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.58",
+          "exchange": "0.115",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.115"
+        },
+        {
+          "settlement": "0.58",
+          "exchange": "0.115",
+          "brokerage": "0",
+          "iss": "0",
+          "irrf": "0.115"
+        }
+      ]
+    },
+    {
+      "id": "source-ac5f0dccc6ee0dce233cd404",
+      "broker": "BTG",
+      "date": "2024-08-28",
+      "number": "58762654",
+      "kind": "variable",
+      "fees": {
+        "settlement": "12.97",
+        "exchange": "2.59",
+        "brokerage": "51.87",
+        "iss": "5.53",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "CMIG4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "800",
+          "price": "11.54"
+        },
+        {
+          "asset": "CMIG4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "53",
+          "price": "11.55"
+        },
+        {
+          "asset": "CPFE3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "300",
+          "price": "32.87"
+        },
+        {
+          "asset": "HGLG11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "61",
+          "price": "160.9"
+        },
+        {
+          "asset": "HGRU11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "77",
+          "price": "127.52"
+        },
+        {
+          "asset": "TGAR11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "32",
+          "price": "119.99"
+        },
+        {
+          "asset": "SNAG11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "84",
+          "price": "10.21"
+        },
+        {
+          "asset": "RURA11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "98",
+          "price": "10.06"
+        },
+        {
+          "asset": "AGRX11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "98",
+          "price": "10.01"
+        },
+        {
+          "asset": "BTLG11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "58",
+          "price": "101.97"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ]
+      },
+      "original": [
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        },
+        {
+          "settlement": "1.297",
+          "exchange": "0.259",
+          "brokerage": "5.187",
+          "iss": "0.553",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-2954fd060138924d94d0fe08",
+      "broker": "BTG",
+      "date": "2024-12-06",
+      "number": "63777073",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.30",
+        "exchange": "0.06",
+        "brokerage": "1.19",
+        "iss": "0.11",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "AGRX11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "9",
+          "price": "7.41"
+        },
+        {
+          "asset": "BBDC4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "37",
+          "price": "12.34"
+        },
+        {
+          "asset": "PETR4",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "7",
+          "price": "39.13"
+        },
+        {
+          "asset": "RURA11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "11",
+          "price": "7.22"
+        },
+        {
+          "asset": "SNAG11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "17",
+          "price": "9.48"
+        },
+        {
+          "asset": "TGAR11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "2",
+          "price": "91.03"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          91,
+          92,
+          93,
+          94,
+          95,
+          96
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.05",
+          "exchange": "0.01",
+          "brokerage": "0.198333333333333",
+          "iss": "0.0183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.05",
+          "exchange": "0.01",
+          "brokerage": "0.198333333333333",
+          "iss": "0.0183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.05",
+          "exchange": "0.01",
+          "brokerage": "0.198333333333333",
+          "iss": "0.0183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.05",
+          "exchange": "0.01",
+          "brokerage": "0.198333333333333",
+          "iss": "0.0183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.05",
+          "exchange": "0.01",
+          "brokerage": "0.198333333333333",
+          "iss": "0.0183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.05",
+          "exchange": "0.01",
+          "brokerage": "0.198333333333333",
+          "iss": "0.0183333333333333",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-3365f389dd761af4d700e290",
+      "broker": "BTG",
+      "date": "2025-01-14",
+      "number": "65487546",
+      "kind": "variable",
+      "fees": {
+        "settlement": "1.47",
+        "exchange": "0.29",
+        "brokerage": "5.88",
+        "iss": "0.62",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BTLG11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "2",
+          "price": "95.48"
+        },
+        {
+          "asset": "HGLG11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "10",
+          "price": "149.76"
+        },
+        {
+          "asset": "SNAG11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "114",
+          "price": "9.36"
+        },
+        {
+          "asset": "TGAR11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "37",
+          "price": "85.05"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          97,
+          98,
+          99,
+          100
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.3675",
+          "exchange": "0.0725",
+          "brokerage": "1.47",
+          "iss": "0.155",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.3675",
+          "exchange": "0.0725",
+          "brokerage": "1.47",
+          "iss": "0.155",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.3675",
+          "exchange": "0.0725",
+          "brokerage": "1.47",
+          "iss": "0.155",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.3675",
+          "exchange": "0.0725",
+          "brokerage": "1.47",
+          "iss": "0.155",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-7b27f03337bb7d7bd5a0352e",
+      "broker": "BTG",
+      "date": "2025-06-24",
+      "number": "73523315",
+      "kind": "variable",
+      "fees": {
+        "settlement": "3.15",
+        "exchange": "0.63",
+        "brokerage": "12.63",
+        "iss": "1.33",
+        "irrf": "0.63"
+      },
+      "trades": [
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "1100",
+          "price": "10.91"
+        },
+        {
+          "asset": "ITSA4",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "58",
+          "price": "10.91"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          101,
+          102
+        ]
+      },
+      "original": [
+        {
+          "settlement": "1.575",
+          "exchange": "0.315",
+          "brokerage": "6.315",
+          "iss": "0.665",
+          "irrf": "0.315"
+        },
+        {
+          "settlement": "1.575",
+          "exchange": "0.315",
+          "brokerage": "6.315",
+          "iss": "0.665",
+          "irrf": "0.315"
+        }
+      ]
+    },
+    {
+      "id": "source-aa75c4ca448a499b0ef70484",
+      "broker": "BTG",
+      "date": "2026-04-02",
+      "number": "30990435",
+      "kind": "variable",
+      "fees": {
+        "settlement": "0.45",
+        "exchange": "0.10",
+        "brokerage": "2.02",
+        "iss": "0.20",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "TGAR11",
+          "category": "FII",
+          "side": "buy",
+          "quantity": "29",
+          "price": "69.82"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          103
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.45",
+          "exchange": "0.1",
+          "brokerage": "2.02",
+          "iss": "0.2",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "source-1e96eda4da28f9a32f4d5c7e",
+      "broker": "BTG",
+      "date": "2026-04-09",
+      "number": "31186511",
+      "kind": "variable",
+      "fees": {
+        "settlement": "3.56",
+        "exchange": "0.79",
+        "brokerage": "4.50",
+        "iss": "0.46",
+        "irrf": "0.79"
+      },
+      "trades": [
+        {
+          "asset": "CPFE3",
+          "category": "Ação",
+          "side": "sell",
+          "quantity": "300",
+          "price": "53"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          104
+        ]
+      },
+      "original": [
+        {
+          "settlement": "3.56",
+          "exchange": "0.79",
+          "brokerage": "4.5",
+          "iss": "0.46",
+          "irrf": "0.79"
+        }
+      ]
+    },
+    {
+      "id": "source-7c957cc806d2351332eddc19",
+      "broker": "BTG",
+      "date": "2026-04-15",
+      "number": "31395884",
+      "kind": "variable",
+      "fees": {
+        "settlement": "3.49",
+        "exchange": "0.79",
+        "brokerage": "15.56",
+        "iss": "1.65",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "BBAS3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "100",
+          "price": "24.69"
+        },
+        {
+          "asset": "BBAS3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "30",
+          "price": "24.71"
+        },
+        {
+          "asset": "CPLE3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "200",
+          "price": "16.82"
+        },
+        {
+          "asset": "CPLE3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "93",
+          "price": "16.82"
+        },
+        {
+          "asset": "CXSE3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "200",
+          "price": "19.33"
+        },
+        {
+          "asset": "CXSE3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "2",
+          "price": "19.34"
+        },
+        {
+          "asset": "JSLG3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "300",
+          "price": "8.32"
+        },
+        {
+          "asset": "JSLG3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "18",
+          "price": "8.35"
+        },
+        {
+          "asset": "RAIL3",
+          "category": "Ação",
+          "side": "buy",
+          "quantity": "54",
+          "price": "16.98"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Dados",
+        "rows": [
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "original": [
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        },
+        {
+          "settlement": "0.387777777777777",
+          "exchange": "0.0877777777777778",
+          "brokerage": "1.72888888888888",
+          "iss": "0.183333333333333",
+          "irrf": "0"
+        }
+      ]
+    },
+    {
+      "id": "treasury-9299916",
+      "broker": "BTG",
+      "date": "2017-08-08",
+      "number": "9299916",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.56",
+          "price": "9009",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          2
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "5045.040000000001",
+          "reportedNet": "5045.04"
+        }
+      ]
+    },
+    {
+      "id": "treasury-9978308",
+      "broker": "BTG",
+      "date": "2017-10-10",
+      "number": "9978308",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.04",
+          "price": "9140.25",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          3
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "365.61",
+          "reportedNet": "365.61"
+        }
+      ]
+    },
+    {
+      "id": "treasury-11045305",
+      "broker": "BTG",
+      "date": "2018-01-17",
+      "number": "11045305",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.04",
+          "price": "9315.5",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          4
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "372.62",
+          "reportedNet": "372.62"
+        }
+      ]
+    },
+    {
+      "id": "treasury-12371605",
+      "broker": "BTG",
+      "date": "2018-05-11",
+      "number": "12371605",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.11",
+          "price": "9496.67",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          5
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "1044.6337",
+          "reportedNet": "1044.63"
+        }
+      ]
+    },
+    {
+      "id": "treasury-12930108",
+      "broker": "BTG",
+      "date": "2018-07-04",
+      "number": "12930108",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.04",
+          "price": "9579.26",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          6
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "383.17040000000003",
+          "reportedNet": "383.17"
+        }
+      ]
+    },
+    {
+      "id": "treasury-14400330",
+      "broker": "BTG",
+      "date": "2018-10-19",
+      "number": "14400330",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.11",
+          "price": "9762.58",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          7
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "1073.8838",
+          "reportedNet": "1073.88"
+        }
+      ]
+    },
+    {
+      "id": "treasury-16942766",
+      "broker": "BTG",
+      "date": "2019-02-28",
+      "number": "16942766",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.99",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "0.25",
+          "price": "9965.76",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          8
+        ]
+      },
+      "original": [
+        {
+          "b3": "0.99",
+          "gross": "2491.44",
+          "reportedNet": "2491.44"
+        }
+      ]
+    },
+    {
+      "id": "treasury-17603724",
+      "broker": "BTG",
+      "date": "2019-03-28",
+      "number": "17603724",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "1.78",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "0.3",
+          "price": "10010.37",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          9
+        ]
+      },
+      "original": [
+        {
+          "b3": "1.78",
+          "gross": "3003.1110000000003",
+          "reportedNet": "3003.11"
+        }
+      ]
+    },
+    {
+      "id": "treasury-28884836",
+      "broker": "BTG",
+      "date": "2020-07-22",
+      "number": "28884836",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0.53",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2023",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "0.35",
+          "price": "10659.36",
+          "maturity": "2023-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          10
+        ]
+      },
+      "original": [
+        {
+          "b3": "0.53",
+          "gross": "3730.776",
+          "reportedNet": "3730.77"
+        }
+      ]
+    },
+    {
+      "id": "treasury-46085615",
+      "broker": "BTG",
+      "date": "2022-06-22",
+      "number": "46085615",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.4",
+          "price": "11724.08",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          11
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "4689.6320000000005",
+          "reportedNet": "4689.63"
+        }
+      ]
+    },
+    {
+      "id": "treasury-46643368",
+      "broker": "BTG",
+      "date": "2022-07-07",
+      "number": "46643368",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.44",
+          "price": "11786.93",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          12
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "5186.2492",
+          "reportedNet": "5186.24"
+        }
+      ]
+    },
+    {
+      "id": "treasury-46816596",
+      "broker": "BTG",
+      "date": "2022-07-12",
+      "number": "46816596",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.85",
+          "price": "11804.17",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          13
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "10033.5445",
+          "reportedNet": "10033.54"
+        }
+      ]
+    },
+    {
+      "id": "treasury-47776230",
+      "broker": "BTG",
+      "date": "2022-08-11",
+      "number": "47776230",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.85",
+          "price": "11926.57",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          14
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "10137.584499999999",
+          "reportedNet": "10137.58"
+        }
+      ]
+    },
+    {
+      "id": "treasury-49084191",
+      "broker": "BTG",
+      "date": "2022-09-27",
+      "number": "49084191",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.83",
+          "price": "12132.82",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          15
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "10070.2406",
+          "reportedNet": "10070.24"
+        }
+      ]
+    },
+    {
+      "id": "treasury-51570940",
+      "broker": "BTG",
+      "date": "2022-12-21",
+      "number": "51570940",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.82",
+          "price": "12495.37",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          16
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "10246.2034",
+          "reportedNet": "10246.2"
+        }
+      ]
+    },
+    {
+      "id": "treasury-53483598",
+      "broker": "BTG",
+      "date": "2023-02-23",
+      "number": "53483598",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.81",
+          "price": "12733.78",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          17
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "10314.3618",
+          "reportedNet": "10314.36"
+        }
+      ]
+    },
+    {
+      "id": "treasury-53632784",
+      "broker": "BTG",
+      "date": "2023-02-28",
+      "number": "53632784",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "12753.76",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          18
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "1147.8383999999999",
+          "reportedNet": "1147.83"
+        }
+      ]
+    },
+    {
+      "id": "treasury-55567587",
+      "broker": "BTG",
+      "date": "2023-04-28",
+      "number": "55567587",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "13001.91",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          19
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "1170.1719",
+          "reportedNet": "1170.17"
+        }
+      ]
+    },
+    {
+      "id": "treasury-55745563",
+      "broker": "BTG",
+      "date": "2023-05-04",
+      "number": "55745563",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.1",
+          "price": "13015.04",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          20
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "1301.5040000000001",
+          "reportedNet": "1301.5"
+        }
+      ]
+    },
+    {
+      "id": "treasury-56041193",
+      "broker": "BTG",
+      "date": "2023-05-12",
+      "number": "56041193",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.39",
+          "price": "13081.04",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          21
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "5101.605600000001",
+          "reportedNet": "5101.6"
+        }
+      ]
+    },
+    {
+      "id": "treasury-56530827",
+      "broker": "BTG",
+      "date": "2023-05-30",
+      "number": "56530827",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.09",
+          "price": "13161.53",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          22
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "1184.5377",
+          "reportedNet": "1184.53"
+        }
+      ]
+    },
+    {
+      "id": "treasury-57661903",
+      "broker": "BTG",
+      "date": "2023-07-04",
+      "number": "57661903",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "0.01",
+          "price": "13390.52",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          23
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "133.9052",
+          "reportedNet": "133.9"
+        }
+      ]
+    },
+    {
+      "id": "treasury-58553012",
+      "broker": "BTG",
+      "date": "2023-07-31",
+      "number": "58553012",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "0.32",
+          "price": "13470.68",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          24
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "4310.6176000000005",
+          "reportedNet": "4310.61"
+        }
+      ]
+    },
+    {
+      "id": "treasury-63744415",
+      "broker": "BTG",
+      "date": "2024-01-08",
+      "number": "63744415",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "0.01",
+          "price": "14248.97",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          25
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "142.4897",
+          "reportedNet": "142.48"
+        }
+      ]
+    },
+    {
+      "id": "treasury-72047518",
+      "broker": "XP",
+      "date": "2024-08-30",
+      "number": "72047518",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "0",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "buy",
+          "quantity": "3.3",
+          "price": "15181.71",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          26
+        ]
+      },
+      "original": [
+        {
+          "b3": "0",
+          "gross": "50099.643",
+          "reportedNet": "50099.64"
+        }
+      ]
+    },
+    {
+      "id": "treasury-79674540",
+      "broker": "BTG",
+      "date": "2025-02-18",
+      "number": "79674540",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "59.03",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "3",
+          "price": "16066.37",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          27
+        ]
+      },
+      "original": [
+        {
+          "b3": "59.03",
+          "gross": "48199.11",
+          "reportedNet": "48140.08"
+        }
+      ]
+    },
+    {
+      "id": "treasury-85789609",
+      "broker": "BTG",
+      "date": "2025-07-16",
+      "number": "85789609",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "59.56",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2027",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "1.8",
+          "price": "16943.81",
+          "maturity": "2027-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          28
+        ]
+      },
+      "original": [
+        {
+          "b3": "59.56",
+          "gross": "30498.858000000004",
+          "reportedNet": "30439.29"
+        }
+      ]
+    },
+    {
+      "id": "treasury-85789709",
+      "broker": "BTG",
+      "date": "2025-07-16",
+      "number": "85789709",
+      "kind": "treasury",
+      "fees": {
+        "settlement": "58.68",
+        "exchange": "0",
+        "brokerage": "0",
+        "iss": "0",
+        "irrf": "0"
+      },
+      "trades": [
+        {
+          "asset": "Tesouro Selic 2029",
+          "category": "Tesouro Direto",
+          "side": "sell",
+          "quantity": "1.89",
+          "price": "16892.35",
+          "maturity": "2029-03-01"
+        }
+      ],
+      "source": {
+        "file": "CONTROLE DE AÇÕES - ITALO (version 2).xlsx",
+        "sha256": "95d5225a291820c6ee96bfe0200f420dc29fa3efdd7b4531044046e8eccde318",
+        "sheet": "Tesouro Direto",
+        "rows": [
+          29
+        ]
+      },
+      "original": [
+        {
+          "b3": "58.68",
+          "gross": "31926.541499999996",
+          "reportedNet": "31867.86"
+        }
+      ]
+    }
+  ]
+}

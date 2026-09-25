@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {parseEvents,parseProfile} from '../lib/asset-details.ts';
+const stocks={results:[{symbol:'PETR4',data:{cashDividends:[{label:'JCP',rate:0.01234567,lastDatePrior:'2026-08-21T03:00:00Z',paymentDate:null,approvedOn:'2026-08-10T03:00:00Z'}],stockDividends:[{label:'GRUPAMENTO',factor:0.04}],subscriptions:[]}}]};
+const result=parseEvents(stocks,'PETR4',false);
+assert.equal(result.find(e=>e.kind==='cash').rate,0.01234567);
+assert.equal(result.find(e=>e.kind==='cash').entitlementDate,'2026-08-21');
+assert.equal(result.find(e=>e.kind==='cash').paymentDate,null);
+assert.equal(result.find(e=>e.kind==='stock').factor,'0.04');
+assert.equal(parseEvents({dividends:[{symbol:'HGLG11',rate:1.17},{symbol:'OTHER11',rate:3}]},'HGLG11',true).length,1);
+assert.equal(parseEvents({dividends:[]},'HGLG11',true).length,0);
+assert.throws(()=>parseEvents({},'HGLG11',true));
+assert.throws(()=>parseEvents({results:[{symbol:'BHIA3',changed:true,data:{cashDividends:[]}}]},'VVAR3',false));
+assert.equal(parseProfile({results:[{symbol:'PETR4',data:{sector:'Energia'}}]},'PETR4').sector,'Energia');
+console.log('Eventos: formatos de ações/FIIs, precisão, datas ausentes e ticker divergente validados.');

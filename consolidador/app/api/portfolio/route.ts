@@ -5,7 +5,7 @@ import { noteSchema } from '@/lib/validation';
 import { consolidate, type Note } from '@/lib/ledger';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store'}});
-export async function GET(){const user=await getChatGPTUser();if(!user)return json({error:'Entre para acessar a carteira.'},401);try{const notes=await listNotes(user.userId);const market=await database().prepare('SELECT payload,updated FROM quotes WHERE owner=?').bind(user.userId).all<{payload:string;updated:string}>();return json({notes,...consolidate(notes),quotes:market.results.map(q=>JSON.parse(q.payload))});}catch(e){console.error('portfolio read',e);return json({error:'Não foi possível carregar sua carteira. Tente novamente.'},503);}}
+export async function GET(){const user=await getChatGPTUser();if(!user)return json({error:'Entre para acessar a carteira.'},401);try{const notes=await listNotes(user.userId);const market=await database().prepare('SELECT payload,updated FROM quotes WHERE owner=?').bind(user.userId).all<{payload:string;updated:string}>();return json({notes,...consolidate(notes),quotes:market.results.map(q=>({...JSON.parse(q.payload),updated:q.updated}))});}catch(e){console.error('portfolio read',e);return json({error:'Não foi possível carregar sua carteira. Tente novamente.'},503);}}
 export async function POST(req:Request){
  const user=await getChatGPTUser();if(!user)return json({error:'Entre para salvar movimentações.'},401);
  if(req.headers.get('origin')!==new URL(req.url).origin)return json({error:'Origem não permitida.'},403);

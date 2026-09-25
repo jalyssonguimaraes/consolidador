@@ -31,6 +31,9 @@ export function normalizeNote(note:Note){
 }
 export type Movement = ReturnType<typeof normalizeNote>[number];
 const sectorMap:Record<string,string>={PETR4:'Petróleo e gás',VALE3:'Mineração',ABEV3:'Bebidas',BHIA3:'Varejo',ITSA4:'Financeiro',BBDC4:'Financeiro',BBAS3:'Financeiro',CMIG4:'Energia elétrica',CPFE3:'Energia elétrica',CPLE3:'Energia elétrica',RAIL3:'Logística',SUZB3:'Papel e celulose',BPAN4:'Financeiro',BIDI4:'Financeiro',BEEF3:'Alimentos'};
+// Eventos históricos confirmados que precisam ser aplicados ao saldo ainda aberto.
+// BHIA3 passou por grupamento de 25 para 1, com negociação ajustada a partir de 28/12/2023.
+const quantityActions:Record<string,{date:string;factor:number;label:string}[]>={BHIA3:[{date:'2023-12-28',factor:25,label:'Grupamento 25:1'}]};
 export function consolidate(notes:Note[]){
  const movements=notes.flatMap(normalizeNote).sort((a,b)=>a.date.localeCompare(b.date));
  const positions=new Map<string,{asset:string;category:string;brokers:Set<string>;quantity:bigint;cost:bigint;realized:bigint;buyQuantity:bigint;sellQuantity:bigint;reliable:boolean;maturity?:string}>();
@@ -61,9 +64,12 @@ export function consolidate(notes:Note[]){
    realizedByAsset.set(assetKey,realized);p.cost=lots.get(assetKey)?.reduce((s,l)=>s+l.unitCost*l.quantity,0n)||0n;p.realized+=BigInt(Math.round(realized.lots.slice(beforeLots).reduce((s,l)=>s+l.gross,0)))*SCALE;
    p.quantity-=q;p.sellQuantity+=q;
   }
-  if(t.side==='buy'){const bucket=lots.get(key)||[];bucket.push({quantity:q,unitCost:BigInt(t.gross+t.costFees)*SCALE/q,date:t.date,buyId:t.id});lots.set(key,bucket);}
-  positions.set(key,p);
+ if(t.side==='buy'){const bucket=lots.get(key)||[];bucket.push({quantity:q,unitCost:BigInt(t.gross+t.costFees)*SCALE/q,date:t.date,buyId:t.id});lots.set(key,bucket);}
+ positions.set(key,p);
  }
+ // Reexpressa os lotes que permaneceram abertos após eventos de quantidade. O custo total é preservado;
+ // a quantidade é dividida pelo fator e o custo unitário é multiplicado pelo mesmo fator.
+ for(const [key,p] of positions){const actions=quantityActions[p.asset];if(!actions?.length)continue;const bucket=lots.get(key)||[];for(const action of actions){if(bucket.some(l=>l.date>=action.date))continue;for(const lot of bucket){lot.quantity=round(lot.quantity,BigInt(action.factor));lot.unitCost*=BigInt(action.factor);}p.quantity=round(p.quantity,BigInt(action.factor));p.buyQuantity=round(p.buyQuantity,BigInt(action.factor));p.sellQuantity=round(p.sellQuantity,BigInt(action.factor));issues.push({key:key+'-'+action.date,message:`${p.asset}: aplicado ${action.label} em ${action.date}. Quantidade e custo médio foram ajustados; confira eventuais frações do extrato.`});}p.cost=bucket.reduce((s,l)=>s+l.unitCost*l.quantity,0n);}
  const today=new Date().toISOString().slice(0,10);
  for(const [key,p]of positions)if(p.maturity&&p.maturity<today&&p.quantity>0n){p.reliable=false;issues.push({key:key+'-maturity',message:`${p.asset} · ${[...p.brokers].join(' · ')}: há saldo após o vencimento. Conferir resgate ou transferência ausente.`});}
  const positionsOut=[...positions.values()].map(p=>{const r=realizedByAsset.get([p.category,p.asset,p.maturity||''].join('|'));return {asset:p.asset,category:p.category,sector:p.category==='Ação'?(sectorMap[p.asset]||'Outros'):p.category,broker:[...p.brokers].join(', '),custody:null,sourceBrokers:[...p.brokers],brokers:[...p.brokers],quantity:Number(p.quantity)/1e8,buyQuantity:Number(p.buyQuantity)/1e8,sellQuantity:Number(p.sellQuantity)/1e8,cost:p.reliable?Number(round(p.cost,SCALE)):null,average:p.reliable&&p.quantity>0n?Number(p.cost)/Number(p.quantity)/100:null,realized:p.reliable?Number(round(p.realized,SCALE)):null,realizedDetail:r||{gross:0,fees:0,irrf:0,dayTradeQty:0,fifoQty:0,lots:[]},reliable:p.reliable,maturity:p.maturity};});

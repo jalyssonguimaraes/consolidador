@@ -153,3 +153,14 @@ tbody tr:hover { background: var(--ds-brand-50); }
 .ds-badge.warn { background: var(--ds-warn-bg); color: var(--ds-warn); }
 .ds-badge.ok { background: var(--ds-gain-bg); color: var(--ds-gain); }
 .ds-empty { text-align: center; padding: var(--ds-space-7) var(--ds-space-5); color: var(--ds-text-muted); border: 1px dashed var(--ds-border-strong); border-radius: var(--ds-radius-lg); }
+
+/* ---------- Planejamento (CFP) ---------- */
+.planning { display: flex; flex-direction: column; gap: var(--ds-space-4); }
+.planning-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--ds-space-4); }
+.planning-head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--ds-space-3); }
+.planning-card h3 { font-size: var(--ds-text-lg); margin: 0; }
+.planning-card h4 { font-size: var(--ds-text-xs); text-transform: uppercase; letter-spacing: .08em; color: var(--ds-text-muted); margin: var(--ds-space-4) 0 var(--ds-space-2); }
+.planning-card ul { margin: 0; padding-left: 1.1em; font-size: var(--ds-text-sm); }
+.planning-card ul.todo { color: var(--ds-text-muted); }
+.planning-actions { display: flex; gap: var(--ds-space-3); margin-top: var(--ds-space-4); }
+.ds-link { color: var(--ds-brand-700); font-weight: 600; font-size: var(--ds-text-sm); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }

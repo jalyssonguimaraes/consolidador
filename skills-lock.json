@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "brapi": {
+      "source": "brapi-dev/brapi-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brapi/SKILL.md",
+      "computedHash": "9667df5cf06c009ef87ccdd34a61acb80ba7c09cd4ab121a80c3ba9db251fcab"
+    }
+  }
+}

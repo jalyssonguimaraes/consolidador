@@ -1,21 +1,22 @@
-import { getChatGPTUser } from '@/app/chatgpt-auth';
-import { database, listNotes } from '@/db/store';
+import {getUser} from '@/lib/auth';
+import {readNotes,readCache,writeCache} from '@/db/repository';
 import { env } from 'cloudflare:workers';
 import { parseEvents, parseProfile, type AssetDetails } from '@/lib/asset-details';
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: Request) {
-  const user = await getChatGPTUser();
+  const user = await getUser();
   if (!user) return Response.json({error:'Entre para consultar os ativos.'},{status:401});
   const asset = new URL(req.url).searchParams.get('asset') || '';
   if (!/^[A-Z0-9]{4,12}$/.test(asset)) return Response.json({error:'Ticker inválido.'},{status:400});
-  const notes = await listNotes(user.userId);
+  const notes = await readNotes(user.userId);
   const trade = notes.flatMap(n=>n.trades).find(t=>t.asset===asset && t.category!=='Tesouro Direto');
   if (!trade) return Response.json({error:'Ativo não encontrado no seu histórico.'},{status:404});
   if (!env.BRAPI_API_KEY) return Response.json({error:'Chave Brapi não configurada no servidor.'},{status:503});
-  const saved = await database().prepare('SELECT payload FROM quotes WHERE owner=? AND id=?').bind(user.userId,user.userId+':'+asset).first<{payload:string}>();
-  const cached = saved ? (JSON.parse(saved.payload) as {details?:AssetDetails}).details : undefined;
-  if(cached?.eventsAvailable && Date.now()-Date.parse(cached.fetchedAt)<30*60*1000) return Response.json(cached,{headers:{'Cache-Control':'private, max-age=300'}});
+  const params = new URL(req.url).searchParams;
+  const force = params.get('refresh') === '1';
+  const cached=(await readCache(user.userId,'details',asset))[0] as AssetDetails|undefined;
+  if(!force && cached?.eventsAvailable && Date.now()-Date.parse(cached.fetchedAt)<30*60*1000) return Response.json(cached,{headers:{'Cache-Control':'private, max-age=300'}});
   const result: AssetDetails = {asset,fetchedAt:new Date().toISOString(),sector:null,industry:null,description:null,events:[],eventsAvailable:false,messages:[]};
   const fii = trade.category==='FII';
   async function read(path: string) {
@@ -30,6 +31,6 @@ export async function GET(req: Request) {
     ...(fii?[]:[read('stocks/profile').then(p=>Object.assign(result,parseProfile(p,asset))).catch(e=>result.messages.push('Perfil: '+(e instanceof Error?e.message:'Falha de conexão.')))]),
   ]);
   if(!result.eventsAvailable && cached?.eventsAvailable){ result.events=cached.events; result.eventsAvailable=true; result.messages.push('A última consulta falhou. Eventos preservados da consulta de '+cached.fetchedAt.slice(0,10)+'.'); result.fetchedAt=cached.fetchedAt; }
-  else if(result.eventsAvailable && saved) await database().prepare("UPDATE quotes SET payload=json_set(payload, '$.details', json(?)) WHERE owner=? AND id=?").bind(JSON.stringify(result),user.userId,user.userId+':'+asset).run();
+  if(result.eventsAvailable) await writeCache(user.userId,'details',asset,result);
   return Response.json(result,{headers:{'Cache-Control':'private, max-age=300'}});
 }

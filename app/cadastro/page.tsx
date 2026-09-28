@@ -1,0 +1,1 @@
+import {redirect} from 'next/navigation';import {getUser} from '@/lib/auth';import {RegistrationWizard} from '../registration-wizard';export const dynamic='force-dynamic';export default async function RegistrationPage(){const user=await getUser();if(!user)redirect('/login');return <RegistrationWizard/>}

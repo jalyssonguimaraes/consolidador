@@ -1,0 +1,1 @@
+import {redirect} from 'next/navigation';import {getUser} from '@/lib/auth';import {ManagementDashboard} from '../management-dashboard';export const dynamic='force-dynamic';export default async function ManagementPage(){const user=await getUser();if(!user)redirect('/login');return <ManagementDashboard/>}

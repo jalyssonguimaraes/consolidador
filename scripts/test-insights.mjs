@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {consolidate} from '../lib/ledger.ts';
+import {portfolioInsights} from '../lib/portfolio-insights.ts';
+const note=(id,asset,quantity,price,side='buy')=>({id,broker:'TEST',date:side==='buy'?'2024-01-01':'2024-01-02',number:id,kind:'variable',fees:{settlement:'0',exchange:'0',brokerage:'0',iss:'0',irrf:'0'},trades:[{asset,category:'Ação',side,quantity,price}]});
+const ledger=consolidate([note('1','TEST3','10','10'),note('2','TEST4','20','20'),note('3','FAIL3','5','10'),note('4','FAIL3','6','11','sell')]);
+const insights=portfolioInsights({...ledger,quotes:[{asset:'TEST3',price:12,at:'2024-01-03'},{asset:'TEST4',price:NaN,at:'2024-01-03'}]});
+assert.equal(insights.cost,50000);
+assert.equal(insights.comparableCost,10000);
+assert.equal(insights.market,12000);
+assert.equal(insights.change,2000,'Missing prices must not look like investment losses');
+assert.equal(insights.pricedCount,1);
+assert.equal(insights.pendingCount,1);
+assert.equal(insights.realizedTotal,0,'Unreconciled sales must not inflate realized results');
+assert.equal(portfolioInsights({...ledger,quotes:[]}).changePercent,null);
+assert.equal(portfolioInsights({...ledger,quotes:[]},'FII').positions.length,0);
+console.log('Insights: matching cost/price scope, missing prices, pending sales and filters passed.');

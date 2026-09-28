@@ -32,8 +32,20 @@ export function normalizeNote(note:Note){
 export type Movement = ReturnType<typeof normalizeNote>[number];
 const sectorMap:Record<string,string>={PETR4:'Petróleo e gás',VALE3:'Mineração',ABEV3:'Bebidas',BHIA3:'Varejo',ITSA4:'Financeiro',BBDC4:'Financeiro',BBAS3:'Financeiro',CMIG4:'Energia elétrica',CPFE3:'Energia elétrica',CPLE3:'Energia elétrica',RAIL3:'Logística',SUZB3:'Papel e celulose',BPAN4:'Financeiro',BIDI4:'Financeiro',BEEF3:'Alimentos'};
 // Eventos históricos confirmados que precisam ser aplicados ao saldo ainda aberto.
-// BHIA3 passou por grupamento de 25 para 1, com negociação ajustada a partir de 28/12/2023.
-const quantityActions:Record<string,{date:string;factor:number;label:string}[]>={BHIA3:[{date:'2023-12-28',factor:25,label:'Grupamento 25:1'}]};
+// Proporção representada como fração irredutível (numerator/denominator) para cobrir tanto
+// grupamento (reduz quantidade, ex. 1/25) quanto bonificação (aumenta quantidade, ex. 105/100 = 5%).
+// Frações de ação resultantes são sempre arredondadas para baixo — a empresa paga a fração
+// remanescente em dinheiro (leilão de frações), nunca credita ação adicional por arredondamento.
+const quantityActions:Record<string,{date:string;numerator:number;denominator:number;label:string}[]>={
+ BHIA3:[{date:'2023-12-28',numerator:1,denominator:25,label:'Grupamento 25:1'}],
+ // Itaúsa: duas bonificações de 5% (5 ações novas para cada 100), confirmadas nos fatos
+ // relevantes da companhia. Data-base = último dia de negociação com direito; a bonificação é
+ // creditada alguns dias depois, mas o ajuste de quantidade é aplicado a partir da data-base.
+ ITSA4:[
+  {date:'2023-11-27',numerator:105,denominator:100,label:'Bonificação 5% (data-base 27/11/2023)'},
+  {date:'2024-12-02',numerator:105,denominator:100,label:'Bonificação 5% (data-base 02/12/2024)'},
+ ],
+};
 export function consolidate(notes:Note[]){
  const movements=notes.flatMap(normalizeNote).sort((a,b)=>a.date.localeCompare(b.date));
  const positions=new Map<string,{asset:string;category:string;brokers:Set<string>;quantity:bigint;cost:bigint;realized:bigint;buyQuantity:bigint;sellQuantity:bigint;reliable:boolean;maturity?:string}>();
@@ -49,7 +61,35 @@ export function consolidate(notes:Note[]){
  const sameDay=new Map<string,Set<string>>();
  for(const t of movements){const key=[t.date,t.asset].join('|');const set=sameDay.get(key)||new Set<string>();set.add(t.side);sameDay.set(key,set);}
  for(const [key,sides]of sameDay)if(sides.size>1)issues.push({key,message:`${key.replace('|',' · ')}: compra e venda no mesmo dia. Resultado exige conferência da sequência; não há apuração de day trade.`});
- for(const t of movements){
+ // Linha do tempo única, em ordem cronológica, misturando movimentações e eventos de quantidade
+ // (grupamento/bonificação). Isso é necessário porque uma venda posterior a uma bonificação precisa
+ // enxergar o saldo já ajustado — aplicar os eventos só no final compararia a venda contra um saldo
+ // desatualizado (anterior ao evento) e geraria falso alarme de saldo insuficiente.
+ type ActionItem={date:string;asset:string;numerator:number;denominator:number;label:string};
+ const actionItems:ActionItem[]=Object.entries(quantityActions).flatMap(([asset,actions])=>actions.map(a=>({asset,...a})));
+ type TimelineEntry={date:string;order:number;movement?:Movement;action?:ActionItem};
+ const timeline:TimelineEntry[]=[
+  ...movements.map(m=>({date:m.date,order:1,movement:m})),
+  ...actionItems.map(a=>({date:a.date,order:0,action:a})),
+ ].sort((a,b)=>a.date===b.date?a.order-b.order:a.date.localeCompare(b.date));
+ for(const entry of timeline){
+  if(entry.action){
+   const action=entry.action;const num=BigInt(action.numerator),den=BigInt(action.denominator);
+   for(const [key,p] of positions){
+    if(p.asset!==action.asset)continue;
+    const bucket=lots.get(key)||[];
+    for(const lot of bucket){const totalCost=lot.unitCost*lot.quantity;lot.quantity=(lot.quantity*num)/den;lot.unitCost=lot.quantity>0n?totalCost/lot.quantity:0n;}
+    p.quantity=(p.quantity*num)/den;p.buyQuantity=(p.buyQuantity*num)/den;p.sellQuantity=(p.sellQuantity*num)/den;
+    // A fração de ação resultante é paga em dinheiro pela companhia: o saldo permanece em ações inteiras.
+    // Remove a fração dos lotes mais recentes, preservando o custo total de cada lote afetado.
+    let fraction=p.quantity%SCALE;
+    if(fraction>0n){p.quantity-=fraction;p.buyQuantity-=p.buyQuantity%SCALE;for(let i=bucket.length-1;i>=0&&fraction>0n;i--){const lot=bucket[i];const cut=fraction<lot.quantity?fraction:lot.quantity;if(cut<=0n)continue;const total=lot.unitCost*lot.quantity;lot.quantity-=cut;lot.unitCost=lot.quantity>0n?total/lot.quantity:0n;fraction-=cut;}}
+    p.cost=bucket.reduce((s,l)=>s+l.unitCost*l.quantity,0n);
+    issues.push({key:key+'-'+action.date,message:`${p.asset}: aplicado ${action.label} em ${action.date}. Quantidade e custo médio foram ajustados; confira eventuais frações do extrato.`});
+   }
+   continue;
+  }
+  const t=entry.movement!;
   const key=[t.category,t.asset,t.maturity||''].join('|');
   const p=positions.get(key)||{asset:t.asset,category:t.category,brokers:new Set<string>(),quantity:0n,cost:0n,realized:0n,buyQuantity:0n,sellQuantity:0n,reliable:true,maturity:t.maturity};
   p.brokers.add(t.broker);
@@ -67,9 +107,6 @@ export function consolidate(notes:Note[]){
  if(t.side==='buy'){const bucket=lots.get(key)||[];bucket.push({quantity:q,unitCost:BigInt(t.gross+t.costFees)*SCALE/q,date:t.date,buyId:t.id});lots.set(key,bucket);}
  positions.set(key,p);
  }
- // Reexpressa os lotes que permaneceram abertos após eventos de quantidade. O custo total é preservado;
- // a quantidade é dividida pelo fator e o custo unitário é multiplicado pelo mesmo fator.
- for(const [key,p] of positions){const actions=quantityActions[p.asset];if(!actions?.length)continue;const bucket=lots.get(key)||[];for(const action of actions){if(bucket.some(l=>l.date>=action.date))continue;for(const lot of bucket){lot.quantity=round(lot.quantity,BigInt(action.factor));lot.unitCost*=BigInt(action.factor);}p.quantity=round(p.quantity,BigInt(action.factor));p.buyQuantity=round(p.buyQuantity,BigInt(action.factor));p.sellQuantity=round(p.sellQuantity,BigInt(action.factor));issues.push({key:key+'-'+action.date,message:`${p.asset}: aplicado ${action.label} em ${action.date}. Quantidade e custo médio foram ajustados; confira eventuais frações do extrato.`});}p.cost=bucket.reduce((s,l)=>s+l.unitCost*l.quantity,0n);}
  const today=new Date().toISOString().slice(0,10);
  for(const [key,p]of positions)if(p.maturity&&p.maturity<today&&p.quantity>0n){p.reliable=false;issues.push({key:key+'-maturity',message:`${p.asset} · ${[...p.brokers].join(' · ')}: há saldo após o vencimento. Conferir resgate ou transferência ausente.`});}
  const positionsOut=[...positions.values()].map(p=>{const r=realizedByAsset.get([p.category,p.asset,p.maturity||''].join('|'));return {asset:p.asset,category:p.category,sector:p.category==='Ação'?(sectorMap[p.asset]||'Outros'):p.category,broker:[...p.brokers].join(', '),custody:null,sourceBrokers:[...p.brokers],brokers:[...p.brokers],quantity:Number(p.quantity)/1e8,buyQuantity:Number(p.buyQuantity)/1e8,sellQuantity:Number(p.sellQuantity)/1e8,cost:p.reliable?Number(round(p.cost,SCALE)):null,average:p.reliable&&p.quantity>0n?Number(p.cost)/Number(p.quantity)/100:null,realized:p.reliable?Number(round(p.realized,SCALE)):null,realizedDetail:r||{gross:0,fees:0,irrf:0,dayTradeQty:0,fifoQty:0,lots:[]},reliable:p.reliable,maturity:p.maturity};});

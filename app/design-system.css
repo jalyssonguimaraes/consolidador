@@ -128,3 +128,9 @@ button,input,select,textarea{line-height:1.35}
 /* Rodapé de alocação permanece no limite inferior da seção */
 .overview-main-grid .overview-donut{display:flex;flex-direction:column}
 .overview-main-grid .overview-donut .fixed-variable{margin-top:auto}
+
+/* Altura estável das listas do resumo */
+.distribution-list{max-height:300px;overflow-y:auto;min-height:0;padding-right:4px}
+.overview-main-grid .overview-donut .fixed-variable{width:100%}
+.overview-main-grid .overview-donut .fixed-variable span{display:grid;grid-template-columns:minmax(0,1fr) auto;width:100%;align-items:center;column-gap:16px}
+@media(min-width:1101px){.overview-main-grid{grid-template-rows:620px}.overview-main-grid>.overview-portfolio,.overview-main-grid>.overview-donut{height:100%;min-height:0}.overview-main-grid>.overview-portfolio{display:flex;flex-direction:column}.overview-main-grid .overview-asset-scroll{height:auto;min-height:0;flex:1}}

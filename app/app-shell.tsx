@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
-import {LayoutDashboard,Wallet,ChartNoAxesCombined,ArrowLeftRight,ClipboardCheck,Database,LogOut,RefreshCw} from 'lucide-react';
-const pages=[{id:'dashboard',label:'Visão geral',Icon:LayoutDashboard},{id:'carteira',label:'Carteira',Icon:Wallet},{id:'analise',label:'Análise',Icon:ChartNoAxesCombined},{id:'movimentacoes',label:'Movimentações',Icon:ArrowLeftRight},{id:'conferencia',label:'Conferência',Icon:ClipboardCheck}];
+import {LayoutDashboard,Wallet,ChartNoAxesCombined,ArrowLeftRight,ClipboardCheck,Database,LogOut,RefreshCw,Map} from 'lucide-react';
+const pages=[{id:'dashboard',label:'Visão geral',Icon:LayoutDashboard},{id:'carteira',label:'Carteira',Icon:Wallet},{id:'analise',label:'Análise',Icon:ChartNoAxesCombined},{id:'planejamento',label:'Planejamento',Icon:Map},{id:'movimentacoes',label:'Movimentações',Icon:ArrowLeftRight},{id:'conferencia',label:'Conferência',Icon:ClipboardCheck}];
 export type StorageInfo={provider:string;cloud:boolean;loadedAt:string;lastSavedAt:string|null};
 export function AppSidebar({view,name,issues,storage}:{view:string;name:string;issues:number;storage?:StorageInfo}){
  async function signout(){if(storage?.cloud){const r=await fetch('/api/auth',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'logout'})});if(r.ok)window.location.assign(new URL('/login',window.location.origin).href);}else window.location.assign(new URL('/signout-with-chatgpt?return_to=/login',window.location.origin).href);}

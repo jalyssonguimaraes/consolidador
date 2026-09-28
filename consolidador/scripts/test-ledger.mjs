@@ -19,5 +19,9 @@ const sell={...sample,id:'b',date:'2020-01-02',number:'2',fees:{...sample.fees,i
 const result=consolidate([sample,sell]);assert.equal(result.positions[0].quantity,6);assert.equal(result.positions[0].cost,6060);assert.equal(result.positions[0].realized,655);assert.equal(result.positions[0].realizedDetail.fifoQty,4);assert.equal(result.movements[1].net,4695);
 const same={...sample,id:'c',date:'2020-01-03',number:'3',trades:[{...sample.trades[0],quantity:'2',price:'11'}]};const sameSell={...sample,id:'d',date:'2020-01-03',number:'4',fees:{...sample.fees,irrf:'0.02'},trades:[{...sample.trades[0],side:'sell',quantity:'2',price:'12'}]};const day=consolidate([same,sameSell]);assert.equal(day.closed[0].realizedDetail.dayTradeQty,2);assert.equal(day.closed[0].realizedDetail.fifoQty,0);
 const first={...sample,id:'e',date:'2020-01-05',number:'5',trades:[{...sample.trades[0],quantity:'10',price:'10'}]};const second={...sample,id:'f',date:'2020-01-07',number:'6',trades:[{...sample.trades[0],quantity:'10',price:'20'}]};const partial={...sample,id:'g',date:'2020-01-08',number:'7',trades:[{...sample.trades[0],side:'sell',quantity:'5',price:'30'}]};const fifo=consolidate([first,second,partial]);assert.equal(fifo.positions[0].quantity,15);assert.equal(fifo.positions[0].realizedDetail.lots[0].buyId,'e:0');assert.equal(fifo.positions[0].realizedDetail.lots[0].cost,5050);
+// Bonificações ITSA4 (5% em 27/11/2023 e 5% em 02/12/2024): 914 -> 959 -> 1006 ações inteiras,
+// aplicadas cronologicamente antes da venda de 24/06/2025.
+const itsaGap=model.issues.find(i=>i.message.includes('ITSA4 · 2025-06-24')&&i.message.includes('excede o saldo consolidado anterior de 1006'));
+assert(itsaGap,'saldo de ITSA4 antes da venda deveria ser 1006 após as duas bonificações');
 console.log(JSON.stringify({notes:91,movements:140,feeReconciliations:455,issues:model.issues.length,tests:'passed'}));
 

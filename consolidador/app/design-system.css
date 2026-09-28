@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Sagrado Capital — Design System v1
+   Carregado DEPOIS de globals.css (ver layout.tsx). Regra de ouro: nenhuma cor,
+   espaçamento ou raio novo fora dos tokens abaixo. Documentação: docs/design-system.md
+   ========================================================================== */
+
+:root {
+  /* Marca */
+  --ds-brand-900: #0f2444;
+  --ds-brand-800: #142e55;
+  --ds-brand-700: #164cb2;
+  --ds-brand-600: #2563eb;
+  --ds-brand-100: #e6eefc;
+  --ds-brand-50:  #f2f6fd;
+
+  /* Superfícies e texto */
+  --ds-bg:        #f4f6fa;
+  --ds-surface:   #ffffff;
+  --ds-surface-2: #f8fafd;
+  --ds-border:    #dbe3ee;
+  --ds-border-strong: #c3cfe0;
+  --ds-text:      #14243e;
+  --ds-text-muted:#546580;
+  --ds-text-faint:#7b8aa3;
+
+  /* Semânticos (sempre acompanhados de ícone/texto — nunca só cor) */
+  --ds-gain:      #0a7d4f;  --ds-gain-bg:  #e5f5ed;
+  --ds-loss:      #b3261e;  --ds-loss-bg:  #fbe9e7;
+  --ds-warn:      #8a5a00;  --ds-warn-bg:  #fff4db;  --ds-warn-border: #ead39a;
+  --ds-info:      #164cb2;  --ds-info-bg:  #eaf1ff;  --ds-info-border: #aac4f4;
+
+  /* Categorias de ativo (consistentes em gráficos, badges e tabelas) */
+  --ds-cat-acao:    #2563eb;
+  --ds-cat-fii:     #0e9384;
+  --ds-cat-tesouro: #b7791f;
+
+  /* Escala de espaçamento (4px base) */
+  --ds-space-1: 4px;  --ds-space-2: 8px;  --ds-space-3: 12px; --ds-space-4: 16px;
+  --ds-space-5: 24px; --ds-space-6: 32px; --ds-space-7: 48px;
+
+  /* Raio e elevação */
+  --ds-radius-sm: 6px; --ds-radius-md: 10px; --ds-radius-lg: 14px; --ds-radius-pill: 999px;
+  --ds-shadow-1: 0 1px 2px rgb(16 36 75 / .05);
+  --ds-shadow-2: 0 4px 16px rgb(16 36 75 / .08);
+
+  /* Tipografia: pilha do sistema (sem fonte externa) */
+  --ds-font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ds-text-xs: 12px; --ds-text-sm: 13.5px; --ds-text-md: 15px; --ds-text-lg: 18px;
+  --ds-text-xl: 22px; --ds-text-2xl: 30px;
+
+  /* Foco acessível */
+  --ds-focus: 0 0 0 3px rgb(37 99 235 / .35);
+
+  /* Ponte para os tokens do shadcn: componentes existentes herdam a marca */
+  --background: var(--ds-bg);
+  --foreground: var(--ds-text);
+  --primary: var(--ds-brand-700);
+  --border: var(--ds-border);
+  --input: var(--ds-border-strong);
+  --ring: var(--ds-brand-600);
+  --muted-foreground: var(--ds-text-muted);
+  --destructive: var(--ds-loss);
+  --chart-1: var(--ds-cat-acao);
+  --chart-2: var(--ds-cat-fii);
+  --chart-3: var(--ds-cat-tesouro);
+  --chart-4: #7c5cbf;
+  --chart-5: #c2410c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ds-bg: #0c1424; --ds-surface: #121c30; --ds-surface-2: #16223a;
+    --ds-border: #243350; --ds-border-strong: #33456a;
+    --ds-text: #e6edf8; --ds-text-muted: #9fb0cc; --ds-text-faint: #7488a8;
+    --ds-brand-100: #172a4d; --ds-brand-50: #12213c;
+    --ds-gain: #3ecf8e; --ds-gain-bg: #10301f;
+    --ds-loss: #ff8a80; --ds-loss-bg: #3a1613;
+    --ds-warn: #f2c14e; --ds-warn-bg: #33270a; --ds-warn-border: #5c4715;
+    --ds-info: #8db4ff; --ds-info-bg: #14264a; --ds-info-border: #2c4a86;
+    --ds-brand-700: #6f9bff;
+    --card: var(--ds-surface); --card-foreground: var(--ds-text);
+    --popover: var(--ds-surface); --popover-foreground: var(--ds-text);
+    --secondary: var(--ds-surface-2); --secondary-foreground: var(--ds-text);
+    --muted: var(--ds-surface-2); --accent: var(--ds-surface-2); --accent-foreground: var(--ds-text);
+    --primary-foreground: #0c1424;
+  }
+}
+
+/* ---------- Base ---------- */
+body { font-family: var(--ds-font); background: var(--ds-bg); color: var(--ds-text); font-size: var(--ds-text-md); line-height: 1.5; }
+h1, h2, h3 { letter-spacing: -.01em; color: var(--ds-text); }
+:focus-visible { outline: none; box-shadow: var(--ds-focus); border-radius: var(--ds-radius-sm); }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* Valores monetários/quantidades: algarismos tabulares alinham colunas */
+.ds-num, .cards strong, table td, table th { font-variant-numeric: tabular-nums; }
+
+/* ---------- Shell (cabeçalho + centros) ---------- */
+.workspace { --panel-border: var(--ds-border); --panel-muted: var(--ds-text-muted); background: var(--ds-bg); max-width: 1440px; padding: var(--ds-space-6) var(--ds-space-6) var(--ds-space-7); }
+.workspace > header { position: sticky; top: 0; z-index: 20; align-items: center; background: color-mix(in srgb, var(--ds-bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--ds-border); padding: var(--ds-space-3) 0; margin-bottom: var(--ds-space-2); }
+.brand-icon { background: var(--ds-brand-800); color: #fff; border-radius: var(--ds-radius-md); }
+.center-switch { display: inline-flex; gap: var(--ds-space-1); padding: var(--ds-space-1); background: var(--ds-surface-2); border: 1px solid var(--ds-border); border-radius: var(--ds-radius-pill); }
+.center-switch [role="tab"], .center-switch span { font-size: var(--ds-text-xs); font-weight: 600; letter-spacing: .04em; padding: 6px 14px; border-radius: var(--ds-radius-pill); color: var(--ds-text-faint); cursor: default; white-space: nowrap; }
+.center-switch [aria-current="page"] { background: var(--ds-brand-800); color: #fff; }
+.center-switch [aria-disabled="true"] { opacity: .65; }
+
+/* ---------- Superfícies ---------- */
+.surface, .cards article { background: var(--ds-surface); border: 1px solid var(--ds-border); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-1); }
+.surface { padding: var(--ds-space-5); }
+.surface h2 { font-size: var(--ds-text-lg); margin: 0 0 var(--ds-space-1); }
+.note, .muted, small { color: var(--ds-text-muted); }
+.eyebrow { font-size: var(--ds-text-xs); font-weight: 700; letter-spacing: .12em; color: var(--ds-brand-700); }
+.title-row h1 { font-size: var(--ds-text-2xl); }
+
+/* ---------- KPIs ---------- */
+.cards { gap: var(--ds-space-4); }
+.cards article { padding: var(--ds-space-5); transition: box-shadow .15s; }
+.cards article:hover { box-shadow: var(--ds-shadow-2); }
+.cards span { font-size: var(--ds-text-sm); color: var(--ds-text-muted); font-weight: 500; }
+.cards strong { font-size: var(--ds-text-2xl); margin: var(--ds-space-3) 0; color: var(--ds-text); }
+.cards .capital { background: linear-gradient(135deg, var(--ds-brand-900), var(--ds-brand-800)); border-color: var(--ds-brand-800); }
+.cards .capital span, .cards .capital strong, .cards .capital small { color: #fff; }
+.cards .capital small { opacity: .8; }
+@media (max-width: 900px) { .cards { grid-template-columns: 1fr; } .workspace { padding: var(--ds-space-4); } }
+
+/* ---------- Navegação por seções ---------- */
+.view-tabs { position: sticky; top: 64px; z-index: 10; background: var(--ds-bg); border-bottom: 1px solid var(--ds-border); gap: var(--ds-space-5) !important; margin: var(--ds-space-4) 0 var(--ds-space-5) !important; }
+.view-tabs button { font-size: var(--ds-text-md); font-weight: 600; color: var(--ds-text-muted); }
+.view-tabs button[data-state="active"], .view-tabs button[aria-selected="true"] { color: var(--ds-brand-700); }
+
+/* ---------- Avisos e estados ---------- */
+.notice { background: var(--ds-info-bg); border-color: var(--ds-info-border); color: var(--ds-text); border-radius: var(--ds-radius-md); }
+.notice.error { background: var(--ds-loss-bg); border-color: var(--ds-loss); }
+.review-strip { background: var(--ds-warn-bg); border-color: var(--ds-warn-border); color: var(--ds-warn); border-radius: var(--ds-radius-md); font-weight: 600; }
+.review-strip:hover { filter: brightness(.97); }
+.issues li { display: flex; gap: var(--ds-space-3); padding: var(--ds-space-3) var(--ds-space-4); background: var(--ds-warn-bg); border: 1px solid var(--ds-warn-border); color: var(--ds-text); border-radius: var(--ds-radius-md); margin-bottom: var(--ds-space-2); }
+.issues li svg { color: var(--ds-warn); flex: none; margin-top: 2px; }
+
+/* ---------- Tabelas ---------- */
+table { border-collapse: collapse; width: 100%; }
+thead th { font-size: var(--ds-text-xs); text-transform: uppercase; letter-spacing: .06em; color: var(--ds-text-muted); font-weight: 700; background: var(--ds-surface-2); }
+tbody tr { border-bottom: 1px solid var(--ds-border); }
+tbody tr:hover { background: var(--ds-brand-50); }
+.holding-row:hover { background: var(--ds-brand-50); }
+.totals-row { background: var(--ds-surface-2); border-top: 2px solid var(--ds-border-strong); }
+
+/* ---------- Utilitários semânticos ---------- */
+.ds-gain { color: var(--ds-gain); } .ds-loss { color: var(--ds-loss); }
+.ds-badge { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: var(--ds-radius-pill); font-size: var(--ds-text-xs); font-weight: 600; background: var(--ds-brand-100); color: var(--ds-brand-700); }
+.ds-badge[data-cat="Ação"] { background: color-mix(in srgb, var(--ds-cat-acao) 14%, transparent); color: var(--ds-cat-acao); }
+.ds-badge[data-cat="FII"] { background: color-mix(in srgb, var(--ds-cat-fii) 14%, transparent); color: var(--ds-cat-fii); }
+.ds-badge[data-cat="Tesouro Direto"] { background: color-mix(in srgb, var(--ds-cat-tesouro) 16%, transparent); color: var(--ds-cat-tesouro); }
+.ds-badge.warn { background: var(--ds-warn-bg); color: var(--ds-warn); }
+.ds-badge.ok { background: var(--ds-gain-bg); color: var(--ds-gain); }
+.ds-empty { text-align: center; padding: var(--ds-space-7) var(--ds-space-5); color: var(--ds-text-muted); border: 1px dashed var(--ds-border-strong); border-radius: var(--ds-radius-lg); }

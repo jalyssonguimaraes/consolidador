@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useState,useMemo,useCallback,useRef} from 'react';
 import {useRouter} from 'next/navigation';
-import {AppSidebar,DataStatus,type StorageInfo} from './app-shell';
+import {AppSidebar,type StorageInfo} from './app-shell';
 import {AnalysisPanel} from './analysis-panel';
 import {ReconciliationPanel} from './reconciliation-panel';
 import {DashboardOverview} from './dashboard-overview';
@@ -14,7 +14,7 @@ import {Input} from '@/components/ui/input';
 import {Tabs,TabsContent} from '@/components/ui/tabs';
 import {Dialog,DialogContent,DialogHeader,DialogTitle,DialogDescription} from '@/components/ui/dialog';
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/components/ui/select';
-import {Plus,RefreshCw,Download,ArrowUpRight,ShieldCheck,TriangleAlert,Upload} from 'lucide-react';
+import {Plus,RefreshCw,Download,ArrowUpRight,TriangleAlert,Upload} from 'lucide-react';
 import {feeKeys,normalizeNote,type Note,type Trade,type FeeKey,consolidate} from '@/lib/ledger';
 type Quote={asset:string;price:number;at:string;name?:string;symbol?:string;updated?:string;logo?:string|null};
 type ImportBatch={id:string;fileName:string;status:string;totalDocuments:number;insertedDocuments:number;duplicateDocuments:number;rejectedDocuments:number;createdAt:string};
@@ -48,19 +48,15 @@ export default function PortfolioApp({name,initialView="dashboard"}:{name:string
  let preview:ReturnType<typeof normalizeNote>=[];if(draft){try{preview=normalizeNote(draft);}catch{ /* draft is incomplete */ }}
  function updateTrade(i:number,patch:Partial<Trade>){setDraft(d=>d?{...d,trades:d.trades.map((t,j)=>j===i?{...t,...patch}:t)}:d);}
  function exportData(){if(!data)return;const blob=new Blob([JSON.stringify({format:'consolidador-v1',exportedAt:new Date().toISOString(),notes:data.notes,quotes:data.quotes},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='carteira-investimentos.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
- const titles:Record<string,[string,string]>={dashboard:['Visão geral','Seu patrimônio em contexto. Prioridades, cobertura e próximos passos.'],carteira:['Sua carteira','Posições, custos e resultados por ativo.'],analise:['Análise patrimonial','Composição, concentração e contribuição para o resultado.'],planejamento:['Planejamento familiar','Organize o patrimônio nas seis áreas do planejamento financeiro.'],movimentacoes:['Movimentações','Cada documento preservado. Cada alteração rastreável.'],conferencia:['Central de conferência','Transforme pendências em registros conciliados.']};
- const title=titles[tab]||titles.dashboard;
  function editNote(note:Note){setFormError('');setQuick(false);setDraft(structuredClone(note));}
- return <div className="app-frame"><AppSidebar view={tab} name={name} issues={data?.issues.length||0} storage={data?.storage}/><main className="workspace app-workspace"><header className="app-topbar"><span>Carteira pessoal <span className="topbar-divider">/</span> {title[0]}</span><span className="status-chip"><ShieldCheck size={14}/>Acesso privado</span></header>
- <div className="title-row"><div><p className="eyebrow">SAGRADO CAPITAL</p><h1>{title[0]}</h1><p className="muted">{title[1]}</p></div><Button onClick={()=>{setFormError('');setQuick(true);setDraft(blankNote());}}><Plus size={18}/>Nova movimentação</Button></div>
- <DataStatus storage={data?.storage} busy={busy} onReload={()=>load().catch(e=>setError(e.message))}/>
+ return <div className="app-frame"><AppSidebar view={tab} name={name} issues={data?.issues.length||0} storage={data?.storage}/><main className="workspace app-workspace compact-workspace">
  {error&&<div role="alert" className="notice error">{error}<Button variant="outline" onClick={()=>load().catch(e=>setError(e.message))}>Tentar novamente</Button></div>}
  {message&&<p role="status" className="notice">{message}</p>}
  {!data&&!error&&<p role="status" className="surface">Carregando movimentações…</p>}
  {data&&!data.notes.length&&<section className="surface import"><div><p className="eyebrow">BASE INICIAL</p><h2>Importe seu histórico de investimentos</h2><p>Cada arquivo gera um lote auditável no Supabase. Documentos repetidos são preservados sem duplicação.</p><p className="note">Use um arquivo JSON exportado pelo sistema. Arquivos de corretoras serão adicionados por adaptadores específicos.</p></div><Button disabled={busy} onClick={()=>importInput.current?.click()}>{busy?'Importando…':'Selecionar arquivo'}</Button></section>}
  {data&&<>
  {tab!=='dashboard'&&<><div className="toolbar"><div className="broker"><span>Classe de ativo</span><Choice label="Filtrar classe de ativo" value={assetClass} onChange={setAssetClass} options={['Todas','Ação','FII','Tesouro Direto']}/></div><div className="actions"><small className="note">{data.quotes.length?`Mercado em cache · ${new Date(Math.max(...data.quotes.map(q=>q.updated?Date.parse(q.updated):0))).toLocaleString('pt-BR')}`:'Sem cotações armazenadas'}</small>{tab==='movimentacoes'&&<Button variant="outline" onClick={()=>importInput.current?.click()} disabled={busy}><Upload size={16}/>Importar notas</Button>}<Button variant="outline" onClick={market} disabled={busy}><RefreshCw size={16}/>Atualizar cotações</Button><Button variant="outline" onClick={exportData}><Download size={16}/>Exportar dados</Button></div></div>{tab==='movimentacoes'&&data.imports?.length>0&&<div className="import-history"><b>Última importação</b><span>{data.imports[0].fileName}</span><small>{data.imports[0].insertedDocuments} novos · {data.imports[0].duplicateDocuments} duplicados · {new Date(data.imports[0].createdAt).toLocaleString('pt-BR')}</small></div>}{data.issues.length>0&&<button className="review-strip" onClick={()=>setTab('conferencia')}><TriangleAlert size={18}/><span>{data.issues.length} pendências de conferência no histórico. Veja os documentos afetados.</span><ArrowUpRight size={18}/></button>}</>}
- <Tabs value={tab} onValueChange={setTab}><TabsContent value="dashboard"><DashboardOverview data={data} onReview={()=>setTab('conferencia')} onPortfolio={asset=>asset?router.push(`/ativos/${encodeURIComponent(asset)}`):setTab('carteira')}/></TabsContent>
+ <Tabs value={tab} onValueChange={setTab}><TabsContent value="dashboard"><DashboardOverview data={data} busy={busy} onNewMovement={()=>{setFormError('');setQuick(true);setDraft(blankNote());}} onReload={()=>load().catch(e=>setError(e.message))} onReview={()=>setTab('conferencia')} onPortfolio={asset=>asset?router.push(`/ativos/${encodeURIComponent(asset)}`):setTab('carteira')}/></TabsContent>
  <TabsContent value="analise"><AnalysisPanel data={data} category={assetClass} onReview={()=>setTab('conferencia')}/><AllocationCharts allocation={allocation} sectors={sectors}/></TabsContent><TabsContent value="carteira"><Holdings positions={selected} realized={(data.realizedPositions||[...data.positions,...data.closed]).filter(p=>assetClass==='Todas'||p.category===assetClass)} movements={data.movements} quotes={data.quotes}/></TabsContent>
  <TabsContent value="planejamento"><PlanningView investedCost={money(selected.reduce((sum,position)=>sum+(position.cost||0),0))} positions={selected.length} issues={data.issues.length} onOpen={setTab}/></TabsContent>
  <TabsContent value="movimentacoes"><MovementsPanel movements={trades} notes={filteredNotes} onEdit={editNote}/></TabsContent>
